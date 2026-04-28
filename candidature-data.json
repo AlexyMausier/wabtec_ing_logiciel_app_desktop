@@ -13,7 +13,7 @@
     "availability": "Immédiate"
   },
   "hero": {
-    "intro": "Ingénieur passionné par les systèmes complexes, je conçois des solutions logicielles embarquées et industrielles robustes — de l'architecture logicielle à l'interface utilisateur, avec une culture du test et de l'automatisation.",
+    "intro": "Ingénieur passionné par les systèmes complexes, je conçois des solutions logicielles embarquées et industrielles robustes, de l'architecture logicielle à l'interface utilisateur, avec une culture du test et de l'automatisation.",
     "note": "Après mes études sur Bordeaux, je souhaite m'installer durablement dans la région tourangelle. Ayant déjà travaillé pour Faiveley Transport, devenu Wabtec, ce serais un honneur de pouvoir exercer mon nouveau métier au sein de l'entreprise.",
     "ctaEmailLabel": "Me contacter",
     "ctaMotivationLabel": "Motivation"
@@ -36,13 +36,13 @@
       },
       "about": {
         "title": "Mon profil",
-        "text": "Jeune ingénieur en systèmes embarqués et développement logiciel, j'ai eu la chance de travailler sur des projets concrets — notamment chez STMicroelectronics où j'ai pu concevoir et livrer des applications Desktop de A à Z, y compris lors d'une mission en autonomie à Singapour.",
-        "highlight": "Je suis quelqu'un de curieux et méthodique, qui aime comprendre comment les choses fonctionnent — une habitude que je retrouve aussi bien dans mon travail qu'en dehors, que ce soit en escalade de bloc, en suivant la F1 ou en écrivant de la musique. Je débute encore sur certains aspects du métier d'ingénieur, mais, j'apprends vite et je m'investis pleinement dans ce que j'entreprends, et, j'ai l'avantage de n'avoir évoluer que dans des environnemnts éxigeants comme le férroviaire ou l'aéronaurique."
+        "text": "Jeune ingénieur en systèmes embarqués et développement logiciel, j'ai eu la chance de travailler sur des projets concrets, notamment chez STMicroelectronics où j'ai pu concevoir et livrer des applications Desktop de A à Z, y compris lors d'une mission en autonomie à Singapour.",
+        "highlight": "Je suis quelqu'un de curieux et méthodique, qui aime comprendre comment les choses fonctionnent, une habitude que je retrouve aussi bien dans mon travail qu'en dehors, que ce soit en escalade de bloc, en suivant la F1 ou en écrivant de la musique. Je débute encore sur certains aspects du métier d'ingénieur, mais, j'apprends vite et je m'investis pleinement dans ce que j'entreprends, et, j'ai l'avantage de n'avoir évoluer que dans des environnemnts éxigeants comme le férroviaire ou l'aéronaurique."
       },
       "motivation": {
         "title": "Pourquoi cette offre m’intéresse",
-        "text": "Ce poste tombe au bon moment. Après mes études d'ingénieur à Bordeaux et trois ans chez STMicroelectronics où j'ai pu concevoir une application de bout en bout, je reviens m'installer durablement en région tourangelle — et Wabtec fait partie des entreprises où je souhaite naturellement frapper à la porte.",
-        "highlight": "J'ai travaillé chez Faiveley Transport il y a quelques années, avant qu'elle devienne Wabtec. J'en garde un bon souvenir : une entreprise sérieuse, des équipes compétentes, un domaine exigeant qui m'avait donné envie d'aller plus loin. C'est en partie ce passage qui m'a motivé à reprendre mes études pour devenir ingénieur. Aujourd'hui, avec une expérience concrète en développement logiciel Desktop et une vraie connaissance du secteur ferroviaire, je pense pouvoir apporter quelque chose d'utile à votre équipe — tout en trouvant un environnement où m'investir sur le long terme."
+        "text": "Ce poste tombe au bon moment. Après mes études d'ingénieur à Bordeaux et trois ans chez STMicroelectronics où j'ai pu concevoir une application de bout en bout, je reviens m'installer durablement en région tourangelle, et Wabtec fait partie des entreprises où je souhaite naturellement frapper à la porte.",
+        "highlight": "J'ai travaillé chez Faiveley Transport il y a quelques années, avant qu'elle devienne Wabtec. J'en garde un bon souvenir : une entreprise sérieuse, des équipes compétentes, un domaine exigeant qui m'avait donné envie d'aller plus loin. C'est en partie ce passage qui m'a motivé à reprendre mes études pour devenir ingénieur. Aujourd'hui, avec une expérience concrète en développement logiciel Desktop et une vraie connaissance du secteur ferroviaire, je pense pouvoir apporter quelque chose d'utile à votre équipe, tout en trouvant un environnement où m'investir sur le long terme."
       },
       "proof": {
         "title": "Ce que je peux apporter",
