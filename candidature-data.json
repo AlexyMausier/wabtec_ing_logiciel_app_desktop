@@ -1,0 +1,107 @@
+{
+  "page": {
+    "title": "Présentation Alexy MAÜSIER",
+    "brand": "Candidature - Alexy MAÜSIER",
+    "badge": "Bienvenue sur ma page de présentation"
+  },
+  "candidate": {
+    "fullName": "Alexy MAÜSIER",
+    "email": "alexy.mausier@outlook.fr",
+    "phone": "06 05 22 93 38",
+    "linkedinLabel": "Alexy MAÜSIER",
+    "linkedinUrl": "https://www.linkedin.com/in/alexy-maüsier-bb9a09211",
+    "availability": "Immédiate"
+  },
+  "hero": {
+    "intro": "Ingénieur passionné par les systèmes complexes, je conçois des solutions logicielles embarquées et industrielles robustes — de l'architecture logicielle à l'interface utilisateur, avec une culture du test et de l'automatisation.",
+    "note": "Après mes études sur Bordeaux, je souhaite m'installer durablement dans la région tourangelle. Ayant déjà travaillé pour Faiveley Transport, devenu Wabtec, ce serais un honneur de pouvoir exercer mon nouveau métier au sein de l'entreprise.",
+    "ctaEmailLabel": "Me contacter",
+    "ctaMotivationLabel": "Motivation"
+  },
+  "jobs": [
+    {
+      "id": "Wabtec - Ingénieur Logiciel Applications Desktop",
+      "jobTitle": "Ingénieur Logiciel Applications Desktop",
+      "jobMeta": "Wabtec · Tours ",
+      "fitTitle": "Pourquoi mon profil peut vous intéressé",
+      "fit": [
+        "Expérience en développement d'application desktop",
+        "Compétences techniques en adéquation avec le poste : C, C++, Python, connaissance en Java",
+        "Bon communicant, esprit analytique et force de proposition"
+      ],
+      "offer": {
+        "title": "Ce que j'ai compris du besoin",
+        "text": "Ce poste s'adresse à un ingénieur logiciel capable de piloter en autonomie le cycle complet de développement d'applications Desktop dans un contexte ferroviaire exigeant. Au-delà du code, le recruteur attend une maîtrise de la documentation technique (spécifications, validation, manuels) et une rigueur sur les critères Qualité / Coût / Délai. L'environnement est structuré et process-driven, avec une forte attente de mutualisation des développements et une capacité à interagir avec les équipes projets, voire à superviser des sous-traitants.",
+        "chips": ["Application Desktop", "Autonomie", "Férroviaire"]
+      },
+      "about": {
+        "title": "Mon profil",
+        "text": "Jeune ingénieur en systèmes embarqués et développement logiciel, j'ai eu la chance de travailler sur des projets concrets — notamment chez STMicroelectronics où j'ai pu concevoir et livrer des applications Desktop de A à Z, y compris lors d'une mission en autonomie à Singapour.",
+        "highlight": "Je suis quelqu'un de curieux et méthodique, qui aime comprendre comment les choses fonctionnent — une habitude que je retrouve aussi bien dans mon travail qu'en dehors, que ce soit en escalade de bloc, en suivant la F1 ou en écrivant de la musique. Je débute encore sur certains aspects du métier d'ingénieur, mais, j'apprends vite et je m'investis pleinement dans ce que j'entreprends, et, j'ai l'avantage de n'avoir évoluer que dans des environnemnts éxigeants comme le férroviaire ou l'aéronaurique."
+      },
+      "motivation": {
+        "title": "Pourquoi cette offre m’intéresse",
+        "text": "Ce poste tombe au bon moment. Après mes études d'ingénieur à Bordeaux et trois ans chez STMicroelectronics où j'ai pu concevoir une application de bout en bout, je reviens m'installer durablement en région tourangelle — et Wabtec fait partie des entreprises où je souhaite naturellement frapper à la porte.",
+        "highlight": "J'ai travaillé chez Faiveley Transport il y a quelques années, avant qu'elle devienne Wabtec. J'en garde un bon souvenir : une entreprise sérieuse, des équipes compétentes, un domaine exigeant qui m'avait donné envie d'aller plus loin. C'est en partie ce passage qui m'a motivé à reprendre mes études pour devenir ingénieur. Aujourd'hui, avec une expérience concrète en développement logiciel Desktop et une vraie connaissance du secteur ferroviaire, je pense pouvoir apporter quelque chose d'utile à votre équipe — tout en trouvant un environnement où m'investir sur le long terme."
+      },
+      "proof": {
+        "title": "Ce que je peux apporter",
+        "text": "Sans prétendre tout maîtriser, voici les atouts que je mettrais immédiatement au service du poste.",
+        "chips": ["Expérience en développement d'application", "Cycle complet : specs -> validation -> doc", "Autonomie et gestion de projet", "Temps de test divisé par 5 à Singapour", "Passé techicien, devenu ingénieur"]
+      },
+      "experience": {
+        "title": "Mes expériences",
+        "text": "Du férroviaire à l'aéronautique en passant par un fabricant de composants électroniques.",
+        "items": [
+          {
+            "title": "Ingénieur développement logiciel",
+            "text": "STMicroelectronics Tours · Alternance · 2022 – 2025\nConception et développement d'une application de pilotage de banc de test en autonomie (Qt/Python)"
+          },
+          {
+            "title": "Ingénieur développement logiciel",
+            "text": "STMicroelectronics Singapour · Stage · 2024\nConception et développement d'une application de pilotage de banc de test en autonomie (Qt/Python)"
+          },
+          {
+            "title": "Technicien Investigation",
+            "text": "Thales AVS Vendôme · Alternance · 2021 – 2022\nIdentification des causes racines de défaillances produits apparues en production ou sur aéronef"
+          },
+          {
+            "title": "Technicien Réglage et Test",
+            "text": "Faiveley Transport · CDI Intérim · 2018 – 2020\nTest, réglage et dépannage de cartes électroniques de la ligne de production"
+          },
+          {
+            "title": "Président et trésorier d'associations étudianntes",
+            "text": "2024 · Trésorier du Bureau des Alternants de l'Enseirb-Matmeca\n2018 · Président du Bureau des Étudiants de l'IUT GEII de Tours"
+          }
+        ]
+      }
+    }
+  ],
+  "education": {
+    "title": "Mes formations",
+    "text": "Parcours marqué par une reprise d'étude après mon passage chez Faiveley pour devenir ingénieur.",
+    "items": [
+      {
+        "title": "Ingénieur en Systèmes Électroniques Embarqués",
+        "text": "Enseirb-Matmeca · Bordeaux\n2022 – 2025\n"
+      },
+      {
+        "title": "Licence pro en électronique numérique et analogique (CERENA)",
+        "text": "IUT GEII · Tours · 2021 – 2022"
+      },
+      {
+        "title": "DUT GEII",
+        "text": "IUT GEII · Tours · 2016 - 2018"
+      },
+      {
+        "title": "Anglais\nCertification TOEIC 2024 : 930 (C1)"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Échangeons",
+    "text": "Si mon profil correspond à vos attentes, je serais ravi d’échanger davantage sur cette opportunité et sur la manière dont je pourrais contribuer à votre équipe.",
+    "emailLabel": "Envoyer un email",
+    "linkedinLabel": "Voir LinkedIn"
+  }
+}

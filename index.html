@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Candidature ciblée</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root,[data-theme="light"]{--bg:#f6f4ef;--surface:#fbfaf7;--surface-2:#f1ede6;--surface-3:#e8e1d5;--text:#221e18;--muted:#6f665b;--line:#d7d0c3;--primary:#0e686d;--primary-soft:#dce9e8;--accent:#8b5c45;--inverse:#faf8f3;--radius-sm:14px;--radius-md:22px;--radius-lg:34px;--shadow:0 18px 50px rgba(22,18,14,.08);--font-body:'Manrope',system-ui,sans-serif;--font-display:'Cormorant Garamond',Georgia,serif}
+    [data-theme="dark"]{--bg:#151412;--surface:#1d1b18;--surface-2:#27231f;--surface-3:#312b25;--text:#eee7dc;--muted:#b1a697;--line:#3b342d;--primary:#79b5b8;--primary-soft:#223336;--accent:#d2a089;--inverse:#171512;--shadow:0 18px 50px rgba(0,0,0,.24)}
+    *{box-sizing:border-box;margin:0;padding:0} html{scroll-behavior:smooth}
+    body{min-height:100vh;font-family:var(--font-body);line-height:1.65;color:var(--text);background:radial-gradient(circle at top left, rgba(14,104,109,.09), transparent 24%),radial-gradient(circle at 88% 12%, rgba(139,92,69,.08), transparent 22%),var(--bg)}
+    a{text-decoration:none;color:inherit} img,svg{display:block;max-width:100%} button,select{font:inherit;color:inherit} button{border:none;background:none;cursor:pointer}
+    :focus-visible{outline:2px solid var(--primary);outline-offset:3px}
+    .skip-link{position:absolute;left:-9999px}.skip-link:focus{left:1rem;top:1rem;background:var(--surface);padding:.7rem 1rem;border-radius:12px;z-index:99}
+    .wrap{width:min(1180px,calc(100% - 1.2rem));margin:auto}
+    .topbar{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bg) 84%, transparent);backdrop-filter:blur(14px);border-bottom:1px solid color-mix(in srgb,var(--text) 10%, transparent)}
+    .topbar-inner{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 0}
+    .logo{display:flex;align-items:center;gap:.8rem;font-weight:800;letter-spacing:.02em}
+    .logo-mark{width:44px;height:44px;border-radius:14px;background:var(--text);color:var(--inverse);display:grid;place-items:center}
+    .menu{display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap}
+    .menu a{font-size:.95rem;color:var(--muted)} .menu a:hover{color:var(--text)}
+    .toggle{width:44px;height:44px;border-radius:999px;background:var(--surface);border:1px solid color-mix(in srgb,var(--text) 10%, transparent);display:grid;place-items:center}
+    main{padding:2rem 0 4rem}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:1.2rem;align-items:stretch}
+    .panel{background:color-mix(in srgb,var(--surface) 92%, transparent);border:1px solid color-mix(in srgb,var(--text) 10%, transparent);box-shadow:var(--shadow)}
+    .hero-main{border-radius:var(--radius-lg);padding:clamp(1.5rem,4vw,3.4rem);position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;min-height:580px}
+    .hero-main:after{content:"";position:absolute;right:-40px;bottom:-40px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle, color-mix(in srgb,var(--primary) 18%, transparent), transparent 70%);pointer-events:none}
+    .hero-side{border-radius:30px;padding:1rem;display:grid;gap:1rem;grid-template-rows:auto auto 1fr auto}
+    .kicker{display:inline-flex;width:max-content;align-items:center;gap:.55rem;padding:.55rem .85rem;border-radius:999px;background:var(--primary-soft);color:var(--primary);font-weight:800;font-size:.92rem}
+    h1,h2,h3{font-family:var(--font-display);letter-spacing:-.03em;line-height:1.1} h1{font-size:clamp(3.2rem,8vw,6.2rem);max-width:8ch;margin-top:1rem} .hero-sub{margin-top:1.1rem;max-width:40ch;font-size:clamp(1.03rem,1.7vw,1.2rem);color:var(--muted)} .hero-note{margin-top:1.3rem;padding:1rem 1.1rem;border-left:2px solid color-mix(in srgb,var(--accent) 55%, transparent);color:var(--muted);max-width:44ch}
+    .cta-row{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.7rem}
+    .btn{min-height:46px;padding:.95rem 1.15rem;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-weight:800;font-size:.95rem}
+    .btn-primary{background:var(--text);color:var(--inverse)} 
+    .btn-secondary{border:1px solid color-mix(in srgb,var(--text) 12%, transparent)}
+    .floating-card,.mini-card{border-radius:24px;background:var(--surface);border:1px solid color-mix(in srgb,var(--text) 8%, transparent);padding:1.1rem}
+    .eyeline{font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:.65rem}
+    .job-title{font-size:1.5rem;font-weight:800;line-height:1.15}
+    .job-meta{margin-top:.45rem;color:var(--muted)}
+    .fit-list{display:grid;gap:.7rem;margin-top:.8rem}
+    .fit-item{display:flex;gap:.7rem;align-items:flex-start}
+    .dot{width:.65rem;height:.65rem;border-radius:999px;background:var(--primary);margin-top:.45rem;flex:0 0 auto}
+    .profile-rail{display:grid;gap:.75rem}
+    .profile-row{display:flex;justify-content:space-between;gap:1rem;padding-bottom:.8rem;border-bottom:1px solid color-mix(in srgb,var(--text) 8%, transparent)}
+    .profile-row span:first-child{color:var(--muted)}
+    .helper{padding:1rem;border-radius:20px;background:var(--surface-2);font-size:.94rem;color:var(--muted)}
+    .helper strong{color:var(--text);display:block;margin-bottom:.35rem}
+    /* .job-picker{width:100%;padding:.85rem 1rem;border-radius:16px;border:1px solid color-mix(in srgb,var(--text) 10%, transparent);background:var(--surface);margin-top:.8rem} */
+    .story-grid{display:grid;grid-template-columns:repeat(14,1fr);gap:1.2rem;margin-top:1.2rem}.card{padding:1.5rem;border-radius:28px}.card h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:.9rem}.muted{color:var(--muted)}
+    .offer{grid-column:span 6;background:linear-gradient(180deg,color-mix(in srgb,var(--primary) 7%, var(--surface)),var(--surface))}
+    .about{grid-column:span 8}
+    .motivation{grid-column:span 8;background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 9%, var(--surface)),var(--surface))}
+    .proof{grid-column:span 6}
+    .experience{grid-column:span 9}
+    .education{grid-column:span 5;background:var(--surface-2)}
+    .contact{grid-column:1/-1;background:var(--text);color:var(--inverse)}.contact .muted{color:color-mix(in srgb,var(--inverse) 76%, transparent)}
+    .chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
+    .chip{padding:.58rem .82rem;border-radius:999px;background:var(--surface-2);font-size:.92rem}
+    .highlight-box{margin-top:1rem;padding:1rem 1.1rem;border-radius:22px;background:var(--surface-2)}
+    .path{display:grid;gap:.9rem;margin-top:1rem}
+    .step{display:grid;grid-template-columns:auto 1fr;gap:.9rem;align-items:start;padding:1rem;border-radius:22px;background:var(--surface-2)}.step-index{width:34px;height:34px;border-radius:999px;background:var(--text);color:var(--inverse);display:grid;place-items:center;font-size:.88rem;font-weight:800}
+    .contact-actions{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.2rem}
+    @media (max-width: 920px){.hero{grid-template-columns:1fr}.offer,.about,.motivation,.proof,.experience,.education,.contact{grid-column:1/-1}}
+    @media (max-width: 640px){.topbar-inner{flex-direction:column;align-items:flex-start}.menu{width:100%;justify-content:space-between}.profile-row{flex-direction:column}.cta-row,.contact-actions{flex-direction:column}.btn{width:100%}.hero-main{min-height:auto}}
+    @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="logo">
+        <div class="logo-mark" style="background:transparent;border:none;" aria-hidden="true">
+          <img src="./wabtec-logo.png" alt="Logo Wabtec" width="40" height="40" style="object-fit:contain;">
+        </div>
+        <span>Candidature ciblée</span></div>
+      <nav class="menu" aria-label="Navigation principale"><a href="#offre">Offre visée</a><a href="#motivation">Motivation</a><a href="#experience">Expérience</a><a href="#contact">Contact</a><button class="toggle" data-theme-toggle aria-label="Changer le thème"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></nav>
+    </div>
+  </header>
+
+  <main id="contenu" class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <section class="panel hero-main">
+        <div>
+          <div class="kicker">Page à adapter pour chaque candidature</div>
+          <h1 id="hero-title">Prénom Nom</h1>
+          <p class="hero-sub">Cette page n’est pas un CV générique : elle est pensée pour être ajustée à chaque offre, afin de montrer immédiatement pourquoi mon profil peut répondre aux besoins du poste et de l’entreprise.</p>
+          <p class="hero-note">À chaque candidature, adapte surtout : l’intitulé du poste, la motivation, les trois arguments de correspondance et les expériences les plus pertinentes.</p>
+          <div class="cta-row"><a class="btn btn-primary" href="mailto:votre@email.fr">Me contacter</a><a class="btn btn-secondary" href="#motivation">Lire ma motivation</a></div>
+        </div>
+        <!-- <div class="muted" style="font-size:.95rem;">Format idéal pour accompagner un CV PDF ou remplacer une lettre de motivation classique</div> -->
+      </section>
+
+      <aside class="panel hero-side">
+        <!-- <div class="floating-card">
+          <div class="eyeline">Choisir une offre</div>
+          <select id="job-picker" class="job-picker" aria-label="Choisir une offre"></select>
+        </div> -->
+        <div class="floating-card" id="offre"><div class="eyeline">Offre visée</div><div class="job-title">Intitulé du poste ciblé</div><div class="job-meta">Entreprise · Ville · Référence de l’offre</div></div>
+        <div class="floating-card"><div class="eyeline">Pourquoi ce profil peut intéresser</div><div class="fit-list"><div class="fit-item"><span class="dot"></span><p>Argument 1 relié directement à l’annonce</p></div><div class="fit-item"><span class="dot"></span><p>Argument 2 qui montre une expérience ou compétence utile</p></div><div class="fit-item"><span class="dot"></span><p>Argument 3 sur ta manière de travailler ou ta motivation</p></div></div></div>
+        <div class="mini-card profile-rail"><div class="profile-row"><span>Email</span><strong>votre@email.fr</strong></div><div class="profile-row"><span>Téléphone</span><strong>06 00 00 00 00</strong></div><div class="profile-row"><span>LinkedIn</span><strong>linkedin.com/in/votreprofil</strong></div><div class="profile-row"><span>Disponibilité</span><strong>Immédiate / à préciser</strong></div></div>
+        <!-- <div class="helper"><strong>Mode d’emploi rapide</strong>Duplique un objet dans la liste <code>jobs</code> du fichier JSON pour créer une nouvelle candidature. Ensuite, change simplement le sélecteur d’offre en haut à droite.</div> -->
+      </aside>
+    </section>
+
+    <section class="story-grid">
+      <section class="panel card offer"><h2>Ce que j’ai compris du besoin</h2><p class="muted"></p><div class="chips"></div></section>
+      <section class="panel card about"><h2>Mon profil en une lecture</h2><p class="muted"></p><div class="highlight-box"></div></section>
+      <section class="panel card motivation" id="motivation"><h2>Pourquoi cette offre m’intéresse</h2><p class="muted"></p><div class="highlight-box"></div></section>
+      <section class="panel card proof"><h2>Ce que je peux apporter</h2><p class="muted"></p><div class="chips"></div></section>
+      <section class="panel card experience" id="experience"><h2>Expériences à mettre en avant</h2><p class="muted"></p><div class="path"></div></section>
+      <section class="panel card education"><h2>Mes formations</h2><p class="muted"></p><div class="path"></div></section>
+      <section class="panel card contact" id="contact"><h2>Échangeons</h2><p class="muted"></p><div class="contact-actions"><a class="btn btn-primary" href="mailto:votre@email.fr" style="background:var(--inverse);color:var(--text)">Envoyer un email</a><a class="btn btn-secondary" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" style="border-color:color-mix(in srgb,var(--inverse) 20%, transparent);color:var(--inverse)">Voir LinkedIn</a></div></section>
+    </section>
+  </main>
+
+  <script>
+    (function(){
+      const toggle=document.querySelector('[data-theme-toggle]');
+      const root=document.documentElement;
+      let theme=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+      const icons={dark:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>',light:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'};
+      function paint(){root.setAttribute('data-theme',theme);toggle.innerHTML=theme==='dark'?icons.light:icons.dark;toggle.setAttribute('aria-label',theme==='dark'?'Passer au mode clair':'Passer au mode sombre');}
+      paint();toggle.addEventListener('click',()=>{theme=theme==='dark'?'light':'dark';paint();});
+
+      const el={
+        title:document.querySelector('title'),
+        brand:document.querySelector('.logo span'),
+        badge:document.querySelector('.kicker'),
+        name:document.querySelector('#hero-title'),
+        intro:document.querySelector('.hero-sub'),
+        note:document.querySelector('.hero-note'),
+        // footer:document.querySelector('.hero-main .muted'),
+        ctaEmail:document.querySelector('.cta-row a[href^="mailto:"]'),
+        ctaMotivation:document.querySelector('.cta-row a[href="#motivation"]'),
+        //picker:document.querySelector('#job-picker'),
+        jobTitle:document.querySelector('#offre .job-title'),
+        jobMeta:document.querySelector('#offre .job-meta'),
+        fitCard:document.querySelectorAll('.floating-card')[1],
+        profileRows:document.querySelectorAll('.profile-row strong'),
+        cards:document.querySelectorAll('.story-grid .card')
+      };
+
+      function chipMarkup(items=[]){return items.map(v=>`<span class="chip">${v}</span>`).join('');}
+      function stepsMarkup(items=[]){return items.map((item,i)=>`<article class="step"><div class="step-index">${String(i+1).padStart(2,'0')}</div><div><strong>${(item.title||'').replace(/\n/g, '<br>')}</strong><p class="muted">${(item.text||'').replace(/\n/g, '<br>')}</p></div></article>`).join('');}
+      function optionLabel(job,index){return job.jobTitle || `Offre ${index+1}`;}
+
+      function applyStatic(data){
+        document.title=data.page?.title||document.title;
+        el.brand.textContent=data.page?.brand||'';
+        el.badge.textContent=data.page?.badge||'';
+        el.name.textContent=data.candidate?.fullName||'';
+        el.intro.textContent=data.hero?.intro||'';
+        el.note.textContent=data.hero?.note||'';
+        // el.footer.textContent=data.hero?.footer||'';
+        el.ctaEmail.textContent=data.hero?.ctaEmailLabel||'Me contacter';
+        el.ctaMotivation.textContent=data.hero?.ctaMotivationLabel||'Lire ma motivation';
+        el.ctaEmail.href='mailto:'+(data.candidate?.email||'');
+        if(el.profileRows[0]) el.profileRows[0].textContent=data.candidate?.email||'';
+        if(el.profileRows[1]) el.profileRows[1].textContent=data.candidate?.phone||'';
+        if(el.profileRows[2]) el.profileRows[2].textContent=data.candidate?.linkedinLabel||'';
+        if(el.profileRows[3]) el.profileRows[3].textContent=data.candidate?.availability||'';
+
+        const education=el.cards[5];
+        education.querySelector('h2').textContent=data.education?.title||'';
+        education.querySelector('p').textContent=data.education?.text||'';
+        education.querySelector('.path').innerHTML=stepsMarkup(data.education?.items||[]);
+
+        const contact=el.cards[6];
+        contact.querySelector('h2').textContent=data.contact?.title||'';
+        contact.querySelector('p').textContent=data.contact?.text||'';
+        const links=contact.querySelectorAll('a');
+        if(links[0]){links[0].textContent=data.contact?.emailLabel||'';links[0].href='mailto:'+(data.candidate?.email||'');}
+        if(links[1]){links[1].textContent=data.contact?.linkedinLabel||'';links[1].href=data.candidate?.linkedinUrl||'#';}
+      }
+
+      function applyJob(job){
+        el.jobTitle.textContent=job.jobTitle||'';
+        el.jobMeta.textContent=job.jobMeta||'';
+        const fitTitle=el.fitCard.querySelector('.eyeline');
+        const fitItems=el.fitCard.querySelectorAll('.fit-item p');
+        fitTitle.textContent=job.fitTitle||'Pourquoi ce profil peut intéresser';
+        (job.fit||[]).forEach((v,i)=>{if(fitItems[i]) fitItems[i].textContent=v;});
+
+        const offer=el.cards[0];
+        offer.querySelector('h2').textContent=job.offer?.title||'';
+        offer.querySelector('p').textContent=job.offer?.text||'';
+        offer.querySelector('.chips').innerHTML=chipMarkup(job.offer?.chips||[]);
+
+        const about=el.cards[1];
+        about.querySelector('h2').textContent=job.about?.title||'';
+        about.querySelector('p').textContent=job.about?.text||'';
+        about.querySelector('.highlight-box').textContent=job.about?.highlight||'';
+
+        const motivation=el.cards[2];
+        motivation.querySelector('h2').textContent=job.motivation?.title||'';
+        motivation.querySelector('p').textContent=job.motivation?.text||'';
+        motivation.querySelector('.highlight-box').textContent=job.motivation?.highlight||'';
+
+        const proof=el.cards[3];
+        proof.querySelector('h2').textContent=job.proof?.title||'';
+        proof.querySelector('p').textContent=job.proof?.text||'';
+        proof.querySelector('.chips').innerHTML=chipMarkup(job.proof?.chips||[]);
+
+        const experience=el.cards[4];
+        experience.querySelector('h2').textContent=job.experience?.title||'';
+        experience.querySelector('p').textContent=job.experience?.text||'';
+        experience.querySelector('.path').innerHTML=stepsMarkup(job.experience?.items||[]);
+      }
+
+      fetch('./candidature-data.json')
+        .then(r=>r.json())
+        .then(data=>{
+          applyStatic(data);
+          const jobs=data.jobs||[];
+          const startJob=jobs[0]||{};
+          applyJob(startJob);
+          /* el.picker.innerHTML=jobs.map((job,i)=>`<option value="${job.id||i}">${optionLabel(job,i)}</option>`).join('');
+          const startJob=jobs[0]||{};
+          applyJob(startJob);
+          el.picker.addEventListener('change',()=>{
+            const current=jobs.find((job,i)=>(job.id||String(i))===el.picker.value) || jobs[0];
+            if(current) applyJob(current);
+          }); */
+        })
+        .catch(err=>console.error('Impossible de charger candidature-data.json', err));
+    })();
+  </script>
+</body>
+</html>
