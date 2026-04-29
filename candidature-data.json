@@ -13,7 +13,7 @@
     "availability": "Immédiate"
   },
   "hero": {
-    "intro": "Ingénieur passionné par les systèmes complexes, je conçois des solutions logicielles embarquées et industrielles robustes, de l'architecture logicielle à l'interface utilisateur, avec une culture du test et de l'automatisation.",
+    "intro": "Ingénieur passionné par les systèmes complexes, je conçois des solutions logicielles embarquées et industrielles, de l'architecture logicielle à l'interface utilisateur, avec une culture du test et de l'automatisation.",
     "note": "Après mes études sur Bordeaux, je souhaite m'installer durablement dans la région tourangelle. Ayant déjà travaillé pour Faiveley Transport, devenu Wabtec, ce serais un honneur de pouvoir exercer mon nouveau métier au sein de l'entreprise.",
     "ctaEmailLabel": "Me contacter",
     "ctaMotivationLabel": "Motivation"
@@ -31,7 +31,7 @@
       ],
       "offer": {
         "title": "Ce que j'ai compris du besoin",
-        "text": "Ce poste s'adresse à un ingénieur logiciel capable de piloter en autonomie le cycle complet de développement d'applications Desktop dans un contexte ferroviaire exigeant. Au-delà du code, le recruteur attend une maîtrise de la documentation technique (spécifications, validation, manuels) et une rigueur sur les critères Qualité / Coût / Délai. L'environnement est structuré et process-driven, avec une forte attente de mutualisation des développements et une capacité à interagir avec les équipes projets, voire à superviser des sous-traitants.",
+        "text": "Ce poste s'adresse à un ingénieur logiciel capable de piloter en autonomie le cycle complet de développement d'applications Desktop dans un contexte ferroviaire exigeant. Au-delà du code, il y a une attente sur la maîtrise de la documentation technique (spécifications, validation, manuels) et une rigueur sur les critères Qualité / Coût / Délai. Enfin, la mission peut ammener à interagir avec les équipes projets, voire à superviser des sous-traitants.",
         "chips": ["Application Desktop", "Autonomie", "Férroviaire"]
       },
       "about": {
@@ -42,12 +42,12 @@
       "motivation": {
         "title": "Pourquoi cette offre m’intéresse",
         "text": "Ce poste tombe au bon moment. Après mes études d'ingénieur à Bordeaux et trois ans chez STMicroelectronics où j'ai pu concevoir une application de bout en bout, je reviens m'installer durablement en région tourangelle, et Wabtec fait partie des entreprises où je souhaite naturellement frapper à la porte.",
-        "highlight": "J'ai travaillé chez Faiveley Transport il y a quelques années, avant qu'elle devienne Wabtec. J'en garde un bon souvenir : une entreprise sérieuse, des équipes compétentes, un domaine exigeant qui m'avait donné envie d'aller plus loin. C'est en partie ce passage qui m'a motivé à reprendre mes études pour devenir ingénieur. Aujourd'hui, avec une expérience concrète en développement logiciel Desktop et une vraie connaissance du secteur ferroviaire, je pense pouvoir apporter quelque chose d'utile à votre équipe, tout en trouvant un environnement où m'investir sur le long terme."
+        "highlight": "J'ai travaillé chez Faiveley Transport il y a quelques années, avant qu'elle devienne Wabtec. J'en garde un bon souvenir : une entreprise sérieuse, des équipes compétentes, un domaine exigeant qui m'avait donné envie d'aller plus loin. C'est en partie ce passage qui m'a motivé à reprendre mes études pour devenir ingénieur. Aujourd'hui, avec une expérience concrète en développement logiciel Desktop et de l'expérience dans le secteur ferroviaire, je pense pouvoir apporter quelque chose d'utile à votre équipe, tout en trouvant un environnement où m'investir sur le long terme."
       },
       "proof": {
         "title": "Ce que je peux apporter",
         "text": "Sans prétendre tout maîtriser, voici les atouts que je mettrais immédiatement au service du poste.",
-        "chips": ["Expérience en développement d'application", "Cycle complet : specs -> validation -> doc", "Autonomie et gestion de projet", "Temps de test divisé par 5 à Singapour", "Passé techicien, devenu ingénieur"]
+        "chips": ["Expérience en développement d'application", "Cycle complet : specs -> validation -> doc", "Autonomie et gestion de projet", "Profil jeune, curieux et dynamique", "Passé techicien, devenu ingénieur"]
       },
       "experience": {
         "title": "Mes expériences",
